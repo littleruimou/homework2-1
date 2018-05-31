@@ -1,8 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define size 5
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+	int a[size]={9,5,3,4,8},i;
+	for (i=0;i<size;i++){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+	bubblesort(a);
+	for (i=0;i<size;i++){
+		printf("%d ",a[i]);
+	}
 	return 0;
 }
